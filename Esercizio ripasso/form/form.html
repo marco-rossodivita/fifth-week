@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js"></script>
+    <title>Controllo input con JS</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Controllo validità dell'input con JavaScript</h1>
+        <form id="f" method="GET" onsubmit="control()">
+            
+            <p> Nel campo nome vengono accettate le lettere maiuscole (A-Z), le lettere minuscole (a-z), le lettere minuscole
+                accentate (sia acute che gravi) e lo spazio, purchè non in prima posizione.<br/>
+                Nel campo matricola vengono accettati esclusivamente caratteri numerici che formano un numero valido,
+                compreso tra 1 e 2000. <br> <br>
+
+                Purtroppo alcuni browser Android non supportano l'evento JavaScript 'keypress': in questi casi il 
+                controllo di validità non risulta efficace
+            </p> 
+            
+            <div class="margine">Nome </div>
+            <input type="text" name="nome" id="nome" class="inputs" onkeypress="controlName();" />
+            
+            <div class="margine">Matricola [1:2000]</div>
+            <input type="text" name="matricola" id="matricola" class="inputs" onkeypress="controlMat();"/>
+            
+            <div>
+            <button type="submit" name="submit" id="submit" class="margine">Submit</button>
+            <button type="reset" name="reset" id="reset" class="margine">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+h1{
+    font-size: 30px ;
+    font-family: Arial;
+}
+
+.container {
+    width:800px;
+    height:auto;
+    margin: auto;
+    border: 1px solid #309230;
+    background-color: #fffff0;
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    }
+    
+.margine{
+    margin-top:30px;
+    }
+    
+.inputs{
+    padding:10px; font-size:20px;
+    }
+
+#submit{
+    padding: 10px 20px; 
+    background: #309230;
+    color: #FFFFFF; 
+    font-size:20px;
+    }
+
+#reset{
+    padding: 10px 20px; 
+    background: #309230;
+    color: #FFFFFF; 
+    font-size:20px;
+    }
+
+body{
+        text-align:justify;
+        line-height:1.8em;
+        font-size:20px;
+    }   
+

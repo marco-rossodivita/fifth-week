@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.corso.java.branimusicali">
+    <class name="Song" table="T_SONGS">
+        <id name="id" column="song_id">
+            <generator class="increment"/>
+        </id>
+        <property name="songName"/>
+        <property name="artidId"/>
+        <many-to-one name="cd" class="com.corso.java.branimusicali.CD" fetch="select">
+            <column name="cd_id" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

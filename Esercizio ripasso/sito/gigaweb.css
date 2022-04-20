@@ -1,0 +1,37 @@
+body{
+    background-color:lightgray;
+    text-align: justify;
+    line-height: 20px;
+    font-size: 17px;
+    width: 1400px;
+    margin:auto;
+}
+
+header{
+    width: 100%;
+    background-color: yellow;
+}
+
+nav{
+    background-color:lawngreen;
+    text-align: left;
+}
+
+ul{
+    list-style-type: disc;
+}
+
+h2{
+    margin-left: 50%;
+    margin-top: -78%;
+}
+
+.immagini{
+    margin-left: 50%;
+    margin-top: 0%;
+    width: 40%;
+}
+
+.fine{
+    margin-bottom: 10%;
+}

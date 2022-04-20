@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.corso.java.branimusicali">
+    <class name="Archive" table="T_ARCHIVE">
+        <id name="id" column="id_archive">
+            <generator class="increment"/>
+        </id>
+        <property name="ArchiveName"/>
+        <set name="cds" table="T_CD" inverse="true" cascade="save-update" lazy="true" fetch="select">
+            <key>
+                <column name="id_archive" />
+            </key>
+            <one-to-many class="com.corso.java.branimusicali.CD" />
+        </set>
+        <set name="artists" table="T_ARTISTS" inverse="true" cascade="save-update" lazy="true" fetch="select">
+            <key>
+                <column name="id_archive" />
+            </key>
+            <one-to-many class="com.corso.java.branimusicali.Artist" />
+        </set>
+    </class>
+</hibernate-mapping>
