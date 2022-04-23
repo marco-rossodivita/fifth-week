@@ -1,11 +1,11 @@
+import logo from './logo.svg';
 import './App.css';
-import Timer from './Components/timer';
+import { ListRepository } from './Components/List';
 
 function App() {
   return (
     <div className="App">
-      <h1>Cronometro</h1>
-      <Timer/>
+      <ListRepository/>
     </div>
   );
 }
